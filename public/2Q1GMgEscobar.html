@@ -5,17 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Schoogle </title>
     <link rel = "icon" href="../assets/schoogle logo.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 
-<body>
+<header>
     <img src="../assets/schoogle header.png" alt="Schoogle logo!!" title="Schoogle">
+
+    </br/><nav>
+        <a href=""> Home </a>
+        <a href=""> Tutor Profiles </a>
+        <a href=""> Ratings </a>
+        <b> Applications </b>
+    </nav>
+
+</header>
+
+<body>
     <h1> Schoogle Application Form </h1>
-    <h2><i> created by Mg06, Mg10, Mg15, Mg16 </i></h2>
+    
+    <button onclick="tutorApplication"> Tutor </button>
+    <button onclick="studentApplication"> Student </button>
+
+    <div id="tutorApplicationForm"> 
+        <h3> Tutor Applications </h3>
+
+        <label> Name 
+            <input id="tutorName" />
+        </label></br/>
+    
+        <label> Age 
+            <input id="tutorAge" />
+        </label></br/>
+
+        <label> Date of Birth (mm/dd/yy) 
+            <input id="tutorDateOfBirth" />
+        </label></br/>
+
+        <label> Subject 
+            <input id="tutorSubject" />
+        </label></br/>
+
+        <label> Rates (Php/hour) 
+            <input id="tutorRates" />
+        </label></br/>
+
+        <button onclick="submittedTutorApplication"> Submit </button>
+    </div>
+
+    <div id="studentApplicationForm"> 
+        <h3> Student Applications </h3>
+
+        <label> Name
+            <input id="studentName" />
+        </label></br/>
+
+        <label> Age 
+            <input id="studentAge" />
+        </label></br/>
+
+        <label> Date of Birth (mm/dd/yy) 
+            <input id="studentDateOfBirth" />
+        </label></br/>
+
+        <label> Select Tutor </label>
+
+        <select name="tutorSelection" id="tutorSelection"> 
+            <option value="tutor1"> 1 </option>
+            <option value="tutor2"> 2 </option>
+            <option value="tutor3"> 3 </option>
+        </select></br/>
+
+        <button onclick="submittedStudentApplication"> Submit </button>
+    </div>
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/9qNDjbw1SlA?si=wbE5zeEer7nJWliE" 
     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
     encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
     allowfullscreen></iframe>
+
+    <script>
+        function tutorApplication() {
+            
+        }
+
+        function studentApplication () {
+            
+        }
+
+        function submittedTutorApplication() {
+
+        }
+
+        function submittedStudentApplication () {
+
+        }
+    </script>
+
 </body>
 </html>
