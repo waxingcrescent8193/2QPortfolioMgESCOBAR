@@ -8,21 +8,43 @@
     <link rel="stylesheet" href="styles.css"> 
 </head>
 
-<header>
-    <img src="../assets/schoogle header.png" alt="Schoogle logo!!" title="Schoogle">
-
-    </br/><nav>
-        <a href=""> Home </a>
-        <a href=""> Tutor Profiles </a>
-        <a href=""> Ratings </a>
-        <b> Applications </b>
-    </nav>
-
-</header>
-
 <body>
-    <h1> Schoogle Application Form </h1>
+    <header>
+        <img src="../assets/schoogle header.png" alt="Schoogle logo!!" title="Schoogle">
+
+        </br/><nav>
+            <a href="https://www.youtube.com/"> Home&nbsp;</a>
+            <a href="https://www.youtube.com/"> Tutor Profiles&nbsp;</a>
+            <a href="https://www.youtube.com/"> Ratings&nbsp;</a>
+            <b> Applications </b>
+        </nav>
+
+    </header>
     
+    <h1> Schoogle Application Form </h1>
+
+    <p> "Education is important, and comprehension is key", is what we believe here in Schoogle. Many students now struggle with their 
+        lessons, especially in subjects like Math. We aim to make education more understandable for students of all ages. However, 
+        we cannot do that all alone. We need the manpower of tutors, and the support of students. </p>
+    
+    <p> Learning can be made easy, and this is where we come in. Our organization aims to create learning environments that blends 
+        different learning styles and techinques, wherein every student can find a tutor that's just right for them. In pursuit of 
+        this goal, our tutors are of different educational backgrounds. </p>
+
+    <p> Schoogle tutors are one of the best, with many of them leading experts in their respective fields. However, skill is not 
+        the only thing that makes a great educator, there is also passion. If you believe that you have the skills or the passion 
+        to educate, join us! The world needs more people like you. </p>
+    
+    <p> Students graduate of our tutoring services have been recorded to be topscorers of their respective schools and universities, 
+        with most of them being very successful and well-known names in their fields. Many have mentioned that the institution helped 
+        in honing their skills not just in their subjects, but also in life.  </p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZDAdi6ZLktc?si=na313W3mbTA9JuwS" title="YouTube video 
+    player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+    web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <p> What are you waiting for? Apply now! </p>
+
     <button onclick="tutorApplication"> Tutor </button>
     <button onclick="studentApplication"> Student </button>
 
@@ -41,11 +63,15 @@
             <input id="tutorDateOfBirth" />
         </label></br/>
 
+        <label> Educational Attainment 
+            <input id="highestEducation"/>
+        </label></br/>
+
         <label> Subject 
             <input id="tutorSubject" />
         </label></br/>
 
-        <label> Rates (Php/hour) 
+        <label> Expected Rates (Php/hour) 
             <input id="tutorRates" />
         </label></br/>
 
@@ -54,6 +80,59 @@
 
     <div id="studentApplicationForm"> 
         <h3> Student Applications </h3>
+
+        <p> For students, please keep this general chart of rates per schedule in mind: </p>
+
+        <table>
+            <tr>
+                <td> Number of Session in a Week </td>
+                <td> Hours per Session </td>
+                <td> Rate </td>
+            </tr>
+
+            <tr>
+                <td> 1 session </td>
+                <td> 3 hours </td>
+                <td> *insert rate* </td>
+            </tr>
+
+            <tr>
+                <td> 1 session </td>
+                <td> 5 hours </td>
+                <td> *insert rate* </td>
+            </tr>
+
+            <tr>
+                <td> 2 sessions </td>
+                <td> 3 hours </td>
+                <td> *insert rate* </td>
+            </tr>
+
+            <tr>
+                <td> 2 sessions </td>
+                <td> 5 hours </td>
+                <td> *insert rate* </td>
+            </tr>
+            
+            <tr>
+                <td> 3 sessions </td>
+                <td> 3 hours </td>
+                <td> *insert rate* </td>
+            </tr>
+
+            <tr>
+                <td> 3 sessions </td>
+                <td> 5 hours </td>
+                <td> *insert rate* </td>
+            </tr>
+
+            <tr>
+                <td> 7 sessions (daily) </td>
+                <td> 3 hours </td>
+                <td> *insert rate* </td>
+            </tr>
+
+        </table></br/>
 
         <label> Name
             <input id="studentName" />
@@ -70,18 +149,13 @@
         <label> Select Tutor </label>
 
         <select name="tutorSelection" id="tutorSelection"> 
-            <option value="tutor1"> 1 </option>
-            <option value="tutor2"> 2 </option>
-            <option value="tutor3"> 3 </option>
+            <option value="tutor1"> First Tutor </option>
+            <option value="tutor2"> Second Tutor </option>
+            <option value="tutor3"> Third Tutor </option>
         </select></br/>
 
         <button onclick="submittedStudentApplication"> Submit </button>
     </div>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/9qNDjbw1SlA?si=wbE5zeEer7nJWliE" 
-    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-    encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-    allowfullscreen></iframe>
 
     <script>
         function tutorApplication() {
@@ -101,5 +175,8 @@
         }
     </script>
 
+    <footer>
+
+    </footer>
 </body>
 </html>
