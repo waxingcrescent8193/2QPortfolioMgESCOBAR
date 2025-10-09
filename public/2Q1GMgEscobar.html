@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="1st Graded Exercise">
+    <meta name="keywords" content="HTML basic tags">
+    <meta name="author" content="Joanna Escobar">
+
     <title> Schoogle </title>
     <link rel = "icon" href="../assets/schoogle logo.png" type="image/png">
     <link rel="stylesheet" href="styles.css"> 
@@ -13,7 +17,7 @@
         <img src="../assets/schoogle header.png" alt="Schoogle logo!!" title="Schoogle">
 
         </br/><nav>
-            <a href="https://www.youtube.com/"> Home&nbsp;</a>
+            <a href="index.html"> Home&nbsp;</a>
             <a href="https://www.youtube.com/"> Tutor Profiles&nbsp;</a>
             <a href="https://www.youtube.com/"> Ratings&nbsp;</a>
             <b> Applications </b>
@@ -48,7 +52,7 @@
     <button onclick="tutorApplication"> Tutor </button>
     <button onclick="studentApplication"> Student </button>
 
-    <div id="tutorApplicationForm"> 
+    <section id="tutorApplicationForm"> 
         <h3> Tutor Applications </h3>
 
         <label> Name 
@@ -76,9 +80,9 @@
         </label></br/>
 
         <button onclick="submittedTutorApplication"> Submit </button>
-    </div>
+    </section>
 
-    <div id="studentApplicationForm"> 
+    <section id="studentApplicationForm"> 
         <h3> Student Applications </h3>
 
         <p> For students, please keep this general chart of rates per schedule in mind: </p>
@@ -155,7 +159,7 @@
         </select></br/>
 
         <button onclick="submittedStudentApplication"> Submit </button>
-    </div>
+    </section>
 
     <script>
         function tutorApplication() {
@@ -176,7 +180,7 @@
     </script>
 
     <footer>
-
+        &copy; Joanna Escobar, 1st Graded Exercise
     </footer>
 </body>
 </html>
