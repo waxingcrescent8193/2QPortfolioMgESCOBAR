@@ -17,14 +17,14 @@
         <img src="../assets/schoogle header.png" alt="Schoogle logo!!" title="Schoogle">
 
         </br/><nav>
-            <a href="index.html"> Home&nbsp;</a>
+            <a href="https://hernandez-enzo.github.io/2QRepositoryMgHernandez/public/2Q1MagnesiumHernandez.html"> Home&nbsp;</a>
             <a href="https://www.youtube.com/"> Tutor Profiles&nbsp;</a>
-            <a href="https://www.youtube.com/"> Ratings&nbsp;</a>
-            <b> Applications </b>
+            <a href="https://renzpshs.github.io/2QRepositoryMgCatapang/2Q1GMagnesiumCatapang.html"> Ratings&nbsp;</a>
+            <a href="https://waxingcrescent8193.github.io/2QPortfolioMgESCOBAR/public/2Q1GMgEscobar.html"> <b> Applications </b> </a>
         </nav>
 
     </header>
-    
+
     <h1> Schoogle Application Form </h1>
 
     <p> "Education is important, and comprehension is key", is what we believe here in Schoogle. Many students now struggle with their 
@@ -45,16 +45,17 @@
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZDAdi6ZLktc?si=na313W3mbTA9JuwS" title="YouTube video 
     player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-    web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></br/>
     
-    <p> What are you waiting for? Apply now! </p>
-
-    <button onclick="tutorApplication()"> Tutor </button>
-    <button onclick="studentApplication()"> Student </button>
+    <div id="selectionButtons"> What are you waiting for? Apply now!</br/> 
+        <button onclick="tutorApplication()"> Tutor </button>
+        <button onclick="studentApplication()"> Student </button>
+    </div>
 
     <section id="tutorApplicationForm"> 
         <h3> Tutor Applications </h3>
 
+        <p> <b> Basic Information </b> </p>
         <label> Name </label>
             <input id="tutorName" /></br>
     
@@ -63,15 +64,26 @@
 
         <label> Date of Birth (mm/dd/yy) </label>
             <input id="tutorDateOfBirth" /></br/>
-
+        
+        <label> Current Address (City) </label>
+            <input id="tutorAddress" /></br>
+    
+        <p> <b> Credentials & Duties </b> </p>
         <label> Educational Attainment </label>
-            <input id="highestEducation"/></br/>
+            <input id="tutorHighestEducation"/></br/>
 
         <label> Subject </label>
             <input id="tutorSubject" /></br/>
 
         <label> Expected Rates (Php/hour) </label>
             <input id="tutorRates" /></br/></br/>
+        
+        <p> <b> Contact Information </b></p>
+        <label> Contact Number </label>
+            <input id="tutorContactNumber" /></br>
+        
+        <label> Email </label>
+            <input id="tutorEmail" /></br>
 
         <button onclick="submittedTutorApplication"> Submit </button>
     </section>
@@ -83,64 +95,72 @@
 
         <table>
             <tr>
-                <td> Number of Session in a Week </td>
-                <td> Hours per Session </td>
-                <td> Rate </td>
+                <th> Number of Sessions in a Week </th>
+                <th> Hours per Session </th>
+                <th> Rate (per week) </th>
             </tr>
 
             <tr>
                 <td> 1 session </td>
                 <td> 3 hours </td>
-                <td> *insert rate* </td>
+                <td> 300 php </td>
             </tr>
 
             <tr>
                 <td> 1 session </td>
                 <td> 5 hours </td>
-                <td> *insert rate* </td>
+                <td> 600 php </td>
             </tr>
 
             <tr>
                 <td> 2 sessions </td>
                 <td> 3 hours </td>
-                <td> *insert rate* </td>
+                <td> 500 php </td>
             </tr>
 
             <tr>
                 <td> 2 sessions </td>
                 <td> 5 hours </td>
-                <td> *insert rate* </td>
+                <td> 700 php </td>
             </tr>
             
             <tr>
                 <td> 3 sessions </td>
                 <td> 3 hours </td>
-                <td> *insert rate* </td>
+                <td> 650 php </td>
             </tr>
 
             <tr>
                 <td> 3 sessions </td>
                 <td> 5 hours </td>
-                <td> *insert rate* </td>
+                <td> 800 php </td>
             </tr>
 
             <tr>
                 <td> 7 sessions (daily) </td>
                 <td> 3 hours </td>
-                <td> *insert rate* </td>
+                <td> 1000 php </td>
             </tr>
 
         </table></br/>
 
+        <p> <b> Basic Information </b> </p>
         <label> Name </label>
             <input id="studentName" /></br/>
+        
+        <label> Contact Information (Number or Email) </label>
+            <input id="studentContact" /></br/>
 
         <label> Age </label>
             <input id="studentAge" /></br/>
 
         <label> Date of Birth (mm/dd/yy) </label>
             <input id="studentDateOfBirth" /></br/>
-
+        
+        <label> Name & Address of School (City) </label>
+            <input id="studentSchool" /></br/>
+        
+        <p> <b> Tutor Selection </b></p>
         <label> Select Tutor </label>
 
         <select name="tutorSelection" id="tutorSelection"> 

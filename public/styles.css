@@ -1,9 +1,53 @@
+* {
+    background-color:#141414;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(197, 98, 255);
+}
+
+a:hover {
+    color: rgb(106, 106, 255);   
+    text-decoration-line: underline;
+}
+
+#selectionButtons {
+    text-align: center;
+}
+
+div > button {
+    width: 200px;
+    length: 150px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 20px;
+}
+
 label {
     display: inline-block;
-    width: 200px;
+    width: 300px;
     text-align: left;
 }
 
+
 section {
     display: none;
+    text-align: center;
+}
+
+table, th, tr, td {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid white;
+    border-collapse:collapse
+}
+
+th {
+    padding-left: 10px;
+    padding-right: 10px;
 }
