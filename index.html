@@ -9,27 +9,116 @@
 
     <title> My Web Page </title>
     <link rel = "icon" href="./assets/stardew-valley-logo-3440218189.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
+
+    <style>
+      :root {
+        --font: Verdana, Geneva, Tahoma, sans-serif;
+        --text-color: rgb(0,0,0);
+      }
+
+      * {
+        background-color: rgb(187, 136, 217); 
+        font-family: var(--font);
+        color: var(--text-color);
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+      }
+
+      #headerImage {
+        float: left;
+        margin-right: 20px;
+      }
+
+      #headerTitle {
+        float: left;
+        margin: 0px;
+        padding-top: 20px;
+      }
+
+      body {
+        padding-left: 70px;
+        padding-right: 70px;
+      }
+
+      p {
+        font-size: 0.75em;
+      }
+
+      div > p {
+        font-style: italic;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: #3B1C32;
+        background-color: #A4D4B4;
+      }
+
+      button {
+        box-sizing:content-box;
+        border-radius: 25px;
+        margin: 10px;
+        padding: 10px;
+        border-color:#EB5E55;
+        background-color: #A4D4B4;
+      }
+
+      a:visited {
+        color: rgb(109, 0, 172);
+      }
+
+      a:hover {
+        color: rgb(53, 53, 255);   
+        text-decoration-line: underline;
+      }
+    </style>
+
 </head>
 
 <body>
   <header>
       <div>
-        <img src="./assets/stardew-valley-logo-3440218189.png" alt="Stardew Valley Logo" title="Website Logo" width="75px" length="75px">
+        <img src="./assets/stardew-valley-logo-3440218189.png" alt="Stardew Valley Logo" title="Website Logo" width="75px" length="75px" id="headerImage">
 
-        <h1> Joanna Elisha Escobar's Portfolio</h1>
+        <h1 id="headerTitle"> Joanna Elisha Escobar's Portfolio</h1>
       </div>
-   
-   <nav>
-      <ul>
-        <li><a href="./public/2Q1GMgEscobar.html"> First Exercise </a></li>
-        <li><a href="#"> Second Graded </a></li>
-        <li><a href="#"> Third Graded </a></li>
-        <li><a href="#"> Access to our Project </a></li>
-        <li><a href="./public/Q21NGMgEscobar.html"> First Nongraded </a></li>
-      </ul>
-   </nav>
   </header>
+
+  <p> Welcome to my portfolio! This is the compilation of all my submission for CS3 this quarter :D</p>
+
+  <div id="navigationBar">
+      <h2> Graded Tasks </h2>
+      <ul>
+        <button><li><a href="./public/2Q1GMgEscobar.html"> First Exercise </a></li></button>
+        <button><li><a href="#"> Second Graded </a></li></button>
+        <button><li><a href="#"> Third Graded </a></li></button>
+      </ul>
+
+      <hr width="100%" size="1">
+      
+      <h2> Nongraded Tasks </h2>
+      <ul>
+        <button><li><a href="./public/Q21NGMgEscobar.html"> First Nongraded </a></li></button>
+      </ul>
+
+      <hr width="100%" size="1">
+
+      <h2> Project </h2>
+        <p> ~ NOTE: to be done with Mg15, Elijah Gamis!!</p>
+      <ul>
+        <button><li><a href="#"> Access to our Project </a></li></button>
+      </ul>
+      
+
+    </div>
 
   <script>
   

@@ -96,6 +96,7 @@ section {
 section > p {
     text-align: center;
 }
+
 table, th, tr, td {
     margin-left: auto;
     margin-right: auto;
