@@ -14,18 +14,22 @@
 
 <body>
     <header>
-        <img src="../assets/1.png" alt="Schoogle logo!!" title="Schoogle" width="60px">
+        <div>
+            <img src="../assets/1.png" alt="Schoogle logo!!" title="Schoogle" width="60px" id="logoHeaderImage">
 
-        </br/><nav>
-            <a href="https://hernandez-enzo.github.io/2QRepositoryMgHernandez/public/2Q1MagnesiumHernandez.html"> Home&nbsp;</a>
-            <a href="https://ethel1wastaken.github.io/CS3_2ndQtrPortfolio/public/2Q1GMgGamis.html"> Tutor Profiles&nbsp;</a>
-            <a href="https://renzpshs.github.io/2QRepositoryMgCatapang/2Q1GMagnesiumCatapang.html"> Ratings&nbsp;</a>
-            <a href="https://waxingcrescent8193.github.io/2QPortfolioMgESCOBAR/public/2Q1GMgEscobar.html"> <b> Applications </b> </a>
-        </nav>
+            <p id="logoHeader"> Schoogle </p>
+
+            </br/><nav>
+                <ul>
+                    <li>  <a href="https://hernandez-enzo.github.io/2QRepositoryMgHernandez/public/2Q1MagnesiumHernandez.html"> Home</a> </li>
+                    <li> <a href="https://ethel1wastaken.github.io/CS3_2ndQtrPortfolio/public/2Q1GMgGamis.html"> Tutors </a></li>
+                    <li> <a href="https://renzpshs.github.io/2QRepositoryMgCatapang/2Q1GMagnesiumCatapang.html"> Ratings</a> </li>
+                    <li id="currentSite"> <a href="https://waxingcrescent8193.github.io/2QPortfolioMgESCOBAR/public/2Q1GMgEscobar.html"> Applications </a> </li>
+                </ul>
+            </nav>
+        </div>
 
     </header>
-
-    <h1> Application Form </h1>
 
     <p> "Education is important, and comprehension is key", is what we believe here in Schoogle. Many students now struggle with their 
         lessons, especially in subjects like Math. We aim to make education more understandable for students of all ages. However, 
@@ -45,15 +49,16 @@
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZDAdi6ZLktc?si=na313W3mbTA9JuwS" title="YouTube video 
     player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-    web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></br/>
+    web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></br/></br/>
     
-    <div id="selectionButtons"> What are you waiting for? Apply now!</br/> 
+    <div id="selectionButtons">
+        <p> What are you waiting for? Apply now! </p>
         <button onclick="tutorApplication()"> Tutor </button>
         <button onclick="studentApplication()"> Student </button>
     </div>
 
     <section id="tutorApplicationForm"> 
-        <h3> Tutor Applications </h3>
+        <h2> Tutor Applications </h2>
 
         <p> <b> Basic Information </b> </p>
         <label> Name </label>
@@ -85,11 +90,11 @@
         <label> Email </label>
             <input id="tutorEmail" /></br>
 
-        <button onclick="submittedTutorApplication"> Submit </button>
+        <button onclick="submittedTutorApplication" class="submission"> Submit </button>
     </section>
 
     <section id="studentApplicationForm"> 
-        <h3> Student Applications </h3>
+        <h2> Student Applications </h2>
 
         <p> For students, please keep this general chart of rates per schedule in mind: </p>
 
@@ -167,7 +172,7 @@
             <option value="tutor3"> Third Tutor </option>
         </select></br/></br/>
 
-        <button onclick="submittedStudentApplication"> Submit </button>
+        <button onclick="submittedStudentApplication" class="submission"> Submit </button>
     </section>
 
     <script src="graded1.js"></script>

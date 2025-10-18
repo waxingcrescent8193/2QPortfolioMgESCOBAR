@@ -1,6 +1,43 @@
+:root {
+    --bg-color: #141414;
+    --text-color: #FFFFFF; 
+}
+
 * {
-    background-color:#141414;
-    color: white;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+}
+
+#logoHeaderImage {
+    float: left;
+    margin-right: 10px;
+}
+
+#logoHeader {
+    color: rgb(215, 215, 215);
+    font-size: 3em;
+    padding-top: 10px;
+    margin: 0px;
 }
 
 a {
@@ -16,6 +53,20 @@ a:hover {
     text-decoration-line: underline;
 }
 
+body {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+button {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 #selectionButtons {
     text-align: center;
 }
@@ -26,6 +77,8 @@ div > button {
     padding: 10px;
     margin: 10px;
     font-size: 20px;
+    color: rgb(0,0,0);
+    background-color: rgb(181, 241, 153);
 }
 
 label {
@@ -40,6 +93,9 @@ section {
     text-align: center;
 }
 
+section > p {
+    text-align: center;
+}
 table, th, tr, td {
     margin-left: auto;
     margin-right: auto;
@@ -50,4 +106,11 @@ table, th, tr, td {
 th {
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.submission {
+    width: 90px;
+    height: 50px;
+    margin: 10px;
+    font-size: 20px;
 }
