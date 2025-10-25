@@ -14,6 +14,7 @@
       :root {
         --font: Verdana, Geneva, Tahoma, sans-serif;
         --text-color: rgb(0,0,0);
+        --button-fill: rgba(164, 212, 180, 0.75);
       }
 
       * {
@@ -26,6 +27,9 @@
         position: sticky;
         top: 0;
         overflow: hidden;
+        padding-left: 70px;
+        padding-right: 70px;
+        background-color:#70328f
       }
 
       #headerImage {
@@ -37,9 +41,11 @@
         float: left;
         margin: 0px;
         padding-top: 20px;
+        color: #3adcdf;
+        background-color:#70328f;
       }
 
-      body {
+      #body {
         padding-left: 70px;
         padding-right: 70px;
       }
@@ -48,7 +54,7 @@
         font-size: 0.75em;
       }
 
-      div > p {
+      p.italic {
         font-style: italic;
       }
 
@@ -58,8 +64,8 @@
 
       a {
         text-decoration: none;
-        color: #3B1C32;
-        background-color: #A4D4B4;
+        color: #370c2b;
+        background-color: var(--button-fill);
       }
 
       button {
@@ -68,7 +74,7 @@
         margin: 10px;
         padding: 10px;
         border-color:#EB5E55;
-        background-color: #A4D4B4;
+        background-color: var(--button-fill);
       }
 
       a:visited {
@@ -92,36 +98,39 @@
       </div>
   </header>
 
-  <p> Welcome to my portfolio! This is the compilation of all my submission for CS3 this quarter :D</p>
+  <div id="body">
+      <p> Welcome to my portfolio! This is the compilation of all my submission for CS3 the 2nd quarter :D</p>
 
-  <div id="navigationBar">
       <h2> Graded Tasks </h2>
+    
       <ul>
-        <button><li><a href="./public/2Q1GMgEscobar.html"> First Exercise </a></li></button>
-        <button><li><a href="#"> Second Graded </a></li></button>
-        <button><li><a href="#"> Third Graded </a></li></button>
+        <button onclick="window.location.href='./public/2Q1GMgEscobar.html'"><li><a class="information" href="./public/2Q1GMgEscobar.html"> First Exercise </a></li></button>
+        <button onclick="window.location.href='./public/2Q1GMgEscobar.html'"><li><a class="information" href="./public/2Q1GMgEscobar.html"> Second Graded </a></li></button>
+        <button onclick="window.location.href='./public/Q23GMgEscobar.html'"><li><a class="information" href="./public/Q23GMgEscobar.html"> Third Graded </a></li></button>
       </ul>
 
       <hr width="100%" size="1">
       
       <h2> Nongraded Tasks </h2>
+    
       <ul>
-        <button><li><a href="./public/Q21NGMgEscobar.html"> First Nongraded </a></li></button>
+        <button onclick="window.location.href='./public/Q21NGMgEscobar.html'"><li><a href="./public/Q21NGMgEscobar.html"> First Nongraded </a></li></button>
       </ul>
 
       <hr width="100%" size="1">
 
       <h2> Project </h2>
-        <p> ~ NOTE: to be done with Mg15, Elijah Gamis!!</p>
+        <p class="italic"> ~ NOTE: to be done with Mg15, Elijah Gamis!!</p>
+      
       <ul>
         <button><li><a href="#"> Access to our Project </a></li></button>
       </ul>
-      
-
+    
     </div>
 
-  <script>
-  
-  </script>
+  <footer>
+    <b> References: </b>
+      Amazon. (n.d.). <i> Stardew Valley Logo </i> [Image]. Mustang Monthly. https://khsmustangmonthly.com/wp-content/uploads/2020/03/stardew-valley-logo.png
+  </footer>
 </body>
 </html>
