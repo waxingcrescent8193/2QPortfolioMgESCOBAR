@@ -19,6 +19,10 @@
             font-family: 'Verdana', Geneva, Tahoma, sans-serif;
         }
 
+        a:visited {
+            color: rgb(197, 98, 255);
+        }
+
         body div, section, footer {
             padding: 0 70px;
             text-align: center justify;
@@ -26,6 +30,15 @@
 
         div#introduction p {
             margin: 5px;
+        }
+
+        #imgCaption {
+            float: left;
+        }
+
+        .imgContainer img {
+            float: right;
+            clear: right;
         }
 
         .videoContainer iframe {
@@ -95,6 +108,11 @@
             font-size: 20px;
             color: black;
         }
+
+        footer {
+            background-color: #000000;
+        }
+
     </style>
 
 </head>
@@ -140,6 +158,14 @@
             with most of them being very successful and well-known names in their fields. Many have mentioned that the institution helped 
             in honing their skills not just in their subjects, but also in life.  </p></br/>
         
+         <p id="imgCaption"> This is a dream for many. To complete their education and enter the working class. There are many people here all around the 
+            world. Let us unite to help the future of our countries to succeed and excel without further mental stress and strain in their 
+            lives. </p></br/>
+
+        <div class="imgContainer">
+            <img id="imageAdvertisment" src="../assets/group-diverse-grads-throwing-caps-up-sky.jpg" alt="graduating students" title="graduation" width="450px" height="300px">
+        </div></br/>
+        
         <div class="videoContainer"> 
             <iframe src="https://www.youtube.com/embed/ZDAdi6ZLktc?si=na313W3mbTA9JuwS" title="YouTube video 
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
@@ -149,7 +175,7 @@
         </div>
     
     <div id="selectionButtons">
-        <p> What are you waiting for? Apply now! </p>
+        <p style="font-size:2em"> What are you waiting for? Apply now! </p>
         <button onclick="tutorApplication()"> Tutor </button>
         <button onclick="studentApplication()"> Student </button>
     </div>
